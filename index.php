@@ -10,18 +10,6 @@
         // Validate and sanitize the inputs (you can add your own validation rules)
         $uname = htmlspecialchars($uname);
         $pass = htmlspecialchars($pass);
-
-        // if ($uname === 'admin' && $pass === 'pass') {
-        //     // Set session variables upon successful login
-        //     $_SESSION['username'] = $uname;
-    
-        //     // Redirect the user to the homepage
-        //     header('Location: home.php');
-        //     exit();
-        // } else {
-        //     // Handle invalid login
-        //     echo "Invalid username or password";
-        // }
     
         $sqlQuery = "SELECT * FROM user WHERE username = '$uname' AND password = '$pass'";
 
