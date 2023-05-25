@@ -7,7 +7,6 @@
         $uname = $_POST['username'];
         $pass = $_POST['password'];
 
-        // Validate and sanitize the inputs (you can add your own validation rules)
         $uname = htmlspecialchars($uname);
         $pass = htmlspecialchars($pass);
     
